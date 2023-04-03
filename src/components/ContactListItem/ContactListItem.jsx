@@ -4,7 +4,9 @@ import { Contact, Button } from './ContactListItem.styled';
 const ContactListItem = ({ name, number, onDeleteContact, id }) => {
   return (
     <Contact>
-      <span>{name}</span>: <span>{number}</span>
+      <div>
+        <span>{name}</span>: <span>{number}</span>
+      </div>
       <Button
         type="button"
         onClick={() => {
