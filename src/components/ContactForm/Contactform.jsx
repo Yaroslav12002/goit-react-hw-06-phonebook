@@ -9,7 +9,7 @@ import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';
 import { getContacts } from 'redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/actions';
+import { addContact } from 'redux/contactsSlice';
 
 const initialValues = { name: '', number: '' };
 
